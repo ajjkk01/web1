@@ -1,0 +1,44 @@
+/*selector, 선택자 { declaration, 효과 or 선언 (=Property: Value)*/
+/*Tag < Class < 먼저 온 ID < 나중 ID*/
+body { 
+    background-color: rgb(247, 243, 238); 
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+#active {
+    font-weight: bold;
+}
+a {
+    color: black;
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    margin:0;
+}
+#grid ol {
+    border-right: 1px solid black;
+    width: 100px;
+    margin: 0;
+    padding: 20px 5px 20px 35px;
+}
+#grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+#article{
+    padding: 0px 10px;
+}
+@media(max-width:600px){
+    h1 {font-size:2.5rem;}
+    #grid{display: block;}
+    #grid ol{
+        border-right: none;
+        border-bottom:1px solid black;
+        width:100%;
+    }
+    #article{padding: 0px 20px;}
+}
