@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="./lib/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <img src="./lib/logo.svg" style="width:200px; margin: 0px 15px;">
+        <button class="menubutton" onclick="location.href='./rule.html'">규칙</a></button>
+        <button class="menubutton" onclick="location.href='./price.html'">가격결정판</a></button>
+        <br>
+    </div>
+    <div class="grid">
+        <h1>규칙</h1>
+        <p>최소 비용 최대 효용의 인터넷 쇼핑을 합니다!<br>정해진 물품을 쇼핑해서 가장 싸게 산 사람이 이깁니다.</p>
+        <p>구성: 쇼핑 목록 판 x 1장, 가격 결정 판 x 12장, 쇼핑 목록 카드 x 8장, 상품 카드 x 40장, 쿠폰 카드 x 5장</p>
+        <br>
+    </div>
+    <div class="grid">
+        <h2><span style="color: orange">▶</span>게임 세팅</h2>
+        <ol>
+            <li>공통 "쇼핑 목록" 결정하기</li>
+            <ul>
+                <li>'쇼핑 목록 카드' 에서 6장을 뽑아서 뽑는 순서대로 바닥에 좌측부터 일렬로 내려둡니다.</li>
+                <li>모든 사람이 해당 상품을 구매하는 것을 목표로 합니다.</li>
+            </ul>
+            <li>모든 "판매 가격” 결정하기</li>
+            <ul>
+                <li>가격 결정 판을 섞고 한 장을 뽑아 해당 가격을 사용합니다.</li>
+                <li>가격이 '품절' 인 물품은 살 수 없습니다.</li>
+            </ul>
+            <li>개인별 "꼭 사야 하는 물건" 결정하기</li>
+            <ul>
+                <li>주사위를 굴려서 뽑힌 '쇼핑 목록 카드' 중 '꼭 사야 하는 물건' 을 결정합니다. 좌측부터 눈 1~6에 해당합니다.</li>
+                <li>주사위를 굴려서 해당 물건의 구매 쇼핑몰을 결정합니다.</li>
+                <li>메모지에 '꼭 사야 하는 물건' 과 '쇼핑몰' 을 적습니다. 게임이 끝날 때까지 해당 쇼핑몰의 해당 상품을 꼭 얻어야 합니다.</li>
+            </ul>
+            <li>카드 세팅하기</li>
+            <ul>
+                <li>상품 카드와 쿠폰 카드를 잘 섞어서 가운데에 둡니다.</li>
+            </ul>
+        </ol>
+        <br>
+    </div>
+    <div class="grid">
+        <h2><span style="color: orange">▶</span>게임 진행</h2>
+        <ol>
+            <li>구매 진행하기</li>
+            <ul>
+                <li>진행 순서를 정합니다.</li>
+                <li>매 본인의 턴마다 카드 더미에서 한 장씩 가져옵니다.</li>
+                <li>같은 상품을 중복으로 가지고 있을 수는 없으며, 필요없는 상품 카드는 버릴 수 있습니다. 단, 쿠폰 카드는 버릴 수 없습니다.</li>
+                <li>버릴 때 해당 카드를 원하는 사람이 있다면 '고마워!' 라고 외치고 가져갈 수 있습니다. (진행 순서는 바뀌지 않습니다)</li>
+            </ul>
+            <li>점수 계산하기</li>
+            <ul>
+                <li>"꼭 사야 하는 물건" 을 못 산 사람은 무조건 패배합니다. 단, "꼭 사야 하는 물건" 이 품절이었을 경우 웃돈을 주고 산 것으로 간주하여 '해당 상품의 최고가 + 퀵배송비
+                    2점' 을
+                    추가합니다.</li>
+                <li>손패에 있는 '모든' 물건 카드의 숫자를 합산합니다.</li>
+                <li>판매처 개수마다 배송비가 1씩 추가됩니다.</li>
+                <li>"쇼핑 목록" 중 못 산 물건이 있다면 웃돈을 주고 산 것으로 간주하여 '해당 상품의 최고가 + 퀵배송비 2점' 씩을 추가합니다.</li>
+            </ul>
+            <li>승리 조건</li>
+            <ul>
+                <li>점수 총 합계가 가장 작은 사람 (가장 싸게 산 사람)이 승리합니다.</li>
+            </ul>
+        </ol>
+        <br>
+    </div>
+</body>
+
+</html>

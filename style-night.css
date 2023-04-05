@@ -22,13 +22,13 @@ h1 {
 }
 #grid ol {
     border-right: 1px solid whitesmoke;
-    width: 100px;
+    width: 135px;
     margin: 0;
     padding: 20px 5px 20px 35px;
 }
 #grid{
         display: grid;
-        grid-template-columns: 150px 1fr;
+        grid-template-columns: 185px 1fr;
     }
 #article{
     padding: 0px 10px;
@@ -42,6 +42,7 @@ h1 {
         width:100%;
     }
     #article{padding: 0px 20px;}
+    button{margin:0;}
 }
 button {
     border-radius: 50px;
@@ -50,4 +51,5 @@ button {
     background-color: #333;
     cursor: pointer;
     color: whitesmoke;
+    margin-left: -15px;
 }
