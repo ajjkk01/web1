@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(245, 247, 242);
     padding: 15px 30px;
     font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
@@ -19,12 +19,7 @@ body {
 }
 
 .grid {
-    border-bottom: 1px solid black;
-}
-
-a {
-    text-decoration: none;
-    color: black
+    border-bottom: 1px solid #ccd4c4;
 }
 
 table {
@@ -35,19 +30,19 @@ table {
     width: 100%;
 }
 table th {
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccd4c4;
+  border-bottom: 2px solid #ccd4c4;
   background: #f2ffd1;
   width: 120px;
   padding: 5px 0px;
 }
 table td {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccd4c4;
   padding: 3px 0px;
 }
 table td:first-child {
   font-weight: bold;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #ccd4c4;
 }
 button {
   background-color: white;
@@ -56,4 +51,9 @@ button {
   border-radius: 30px;
   padding: 4px 10px;
   cursor: pointer;
+}
+
+ol>li {
+  font-weight: bold;
+  margin-top: 15px;
 }
