@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="./lib/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <img src="./lib/logo.svg" style="width:200px; margin: 0px 15px;">
+        <button class="menubutton" onclick="location.href='./rule.html'">규칙</a></button>
+        <button class="menubutton" onclick="location.href='./price.html'">가격결정판</a></button>
+        <br>
+    </div>
+    <div>
+        <h1>가격결정판</h1>
+        <p>'한정수량 특가판매' 보드게임 진행을 위한 가격결정판입니다.<br>
+            'Generate' 버튼을 누르면 새로운 가격 목록이 생성됩니다.</p>
+        <br>
+        <h2 style="display: inline;">No. <span id="title"></span></h2> <button onclick="location.reload()"
+            style="position: relative; bottom: 5px;">Generate</button>
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th title="Field #1"></th>
+                    <th title="Field #2">구보공방</th>
+                    <th title="Field #3">박가네</th>
+                    <th title="Field #4">샵 메르디앙</th>
+                    <th title="Field #5">SQ마트</th>
+                    <th title="Field #6">WMP몰</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background: cornsilk;">
+                    <td>배송비</td>
+                    <td><span class="RANDOMfee"></span></td>
+                    <td><span class="RANDOMfee"></span></td>
+                    <td><span class="RANDOMfee"></span></td>
+                    <td><span class="RANDOMfee"></span></td>
+                    <td><span class="RANDOMfee"></span></td>
+                </tr>
+                <tr>
+                    <td>곰인형</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+                <tr>
+                    <td>다이어리</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+                <tr>
+                    <td>떡볶이 밀키트</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+                <tr>
+                    <td>보드게임</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+                <tr>
+                    <td>철제 트롤리</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+                <tr>
+                    <td>탁상달력</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+                <tr>
+                    <td>픽셀 선글라스</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+                <tr>
+                    <td>핸드크림</td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                    <td><span class="RANDOM"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <script>
+        var dt = new Date();
+        var title = '' + dt.getFullYear() + (dt.getMonth() + 1) + dt.getDate() + dt.getHours() + dt.getMinutes() + dt.getSeconds();
+        document.getElementById("title").innerHTML = title;
+
+        const randomElemsfee = document.querySelectorAll('.RANDOMfee');
+        randomElemsfee.forEach(elem => {
+            const randomValuefee = Math.floor((Math.random() * 2) + 1);
+            elem.textContent = randomValuefee;
+        });
+
+        const randomElems = document.querySelectorAll('.RANDOM');
+        randomElems.forEach(elem => {
+            const randomValue = Math.floor(Math.random() * 6);
+            if (randomValue === 1) {
+                elem.textContent = "1";
+                elem.style.color = "red";
+                elem.style.fontWeight = "bold";
+            } else if (randomValue === 5) {
+                elem.textContent = "5";
+                elem.style.color = "blue";
+                elem.style.fontWeight = "bold";
+            } else if (randomValue === 0) {
+                elem.textContent = "품절";
+                elem.style.color = "#999";
+            } else {
+                elem.textContent = randomValue;
+            }
+        });
+    </script>
+</body>
+
+</html>
