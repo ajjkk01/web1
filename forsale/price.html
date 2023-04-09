@@ -6,8 +6,9 @@
     <title>Document</title>
     <link href="./lib/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,11 +29,11 @@
             <thead>
                 <tr>
                     <th title="Field #1"></th>
-                    <th title="Field #2">구보공방</th>
-                    <th title="Field #3">박가네</th>
-                    <th title="Field #4">샵 메르디앙</th>
-                    <th title="Field #5">SQ마트</th>
-                    <th title="Field #6">WMP몰</th>
+                    <th title="Field #2" style="background: skyblue;">구름도매</th>
+                    <th title="Field #3" style="background: pink;">박가네</th>
+                    <th title="Field #4" style="background: wheat;">샵 메르디앙</th>
+                    <th title="Field #5" style="background: yellowgreen;">SQ마트</th>
+                    <th title="Field #6" style="background: lightcoral;">WMP몰</th>
                 </tr>
             </thead>
             <tbody>
@@ -52,8 +53,8 @@
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                 </tr>
-                <tr>
-                    <td>다이어리</td>
+                <tr style="background: #eee;">
+                    <td>멀티비타민</td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
@@ -61,14 +62,14 @@
                     <td><span class="RANDOM"></span></td>
                 </tr>
                 <tr>
-                    <td>떡볶이 밀키트</td>
+                    <td>방향제</td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                 </tr>
-                <tr>
+                <tr style="background: #eee;">
                     <td>보드게임</td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
@@ -77,15 +78,15 @@
                     <td><span class="RANDOM"></span></td>
                 </tr>
                 <tr>
-                    <td>철제 트롤리</td>
+                    <td>새싹볼펜</td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                 </tr>
-                <tr>
-                    <td>탁상달력</td>
+                <tr style="background: #eee;">
+                    <td>컵라면</td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
@@ -100,7 +101,7 @@
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
                 </tr>
-                <tr>
+                <tr style="background: #eee;">
                     <td>핸드크림</td>
                     <td><span class="RANDOM"></span></td>
                     <td><span class="RANDOM"></span></td>
@@ -128,11 +129,11 @@
             const randomValue = Math.floor(Math.random() * 6);
             if (randomValue === 1) {
                 elem.textContent = "1";
-                elem.style.color = "red";
+                elem.style.color = "blue";
                 elem.style.fontWeight = "bold";
             } else if (randomValue === 5) {
                 elem.textContent = "5";
-                elem.style.color = "blue";
+                elem.style.color = "red";
                 elem.style.fontWeight = "bold";
             } else if (randomValue === 0) {
                 elem.textContent = "품절";
