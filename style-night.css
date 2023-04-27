@@ -9,6 +9,7 @@ body {
 a {
     color: powderblue;
     text-decoration: underline;
+    cursor: pointer;
 }
 button> a {
     color: whitesmoke;

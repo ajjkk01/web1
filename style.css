@@ -8,6 +8,7 @@ body {
 a {
     color: darkblue;
     text-decoration: underline;
+    cursor: pointer;
 }
 button> a {
     color: black;
