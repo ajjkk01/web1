@@ -50,22 +50,22 @@ table td:first-child {
   font-weight: bold;
 }
 table tr:nth-child(odd) {
-  background: rgb(255 248 220 / 25%);
+  background: cornsilk;
 }
 table td:nth-last-child(5) {
-  background: rgb(135 206 235 /10%);
+  background: aliceblue;
 }
 table td:nth-last-child(4) {
-  background: rgb(255 192 203 /10%);
+  background: lavenderblush	;
 }
 table td:nth-last-child(3) {
-  background: rgb(245 222 179 /10%);
+  background: papayawhip;
 }
 table td:nth-last-child(2) {
-  background: rgb(154 205 50 / 10%);
+  background: rgb(212, 226, 184);
 }
 table td:last-child {
-  background: rgb(240 128 128 /10%);
+  background: rgb(250, 211, 217);
 }
 ol>li {
   font-weight: bold;

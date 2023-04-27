@@ -5,12 +5,12 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
 }
-#active {
-    font-weight: bold;
-}
 a {
-    color: black;
+    color: darkblue;
     text-decoration: underline;
+}
+button> a {
+    color: black;
 }
 h1 {
     font-size: 3rem;
@@ -21,13 +21,13 @@ h1 {
 }
 #grid ol {
     border-right: 1px solid black;
-    width: 135px;
+    width: 200px;
     margin: 0;
     padding: 20px 5px 20px 35px;
 }
 #grid{
         display: grid;
-        grid-template-columns: 185px 1fr;
+        grid-template-columns: 255px 1fr;
     }
 #article{
     padding: 0px 10px;
@@ -50,4 +50,7 @@ button {
     background-color: whitesmoke;
     cursor: pointer;
     margin-left: -15px;
+}
+li {
+margin-bottom: 0.5rem;
 }

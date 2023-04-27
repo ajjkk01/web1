@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>로판여주 생성기
+    </title>
+    <link rel="stylesheet" href="lib/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Song+Myung&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>로판여주 생성기</h1>
+    </div>
+    <div class="gridcontainer">
+
+        <div style="text-align: center; margin-right:30px;">
+            <h2>Appreance</h2>
+            <img class="portrait" id="portbase" src="lib/Princess-base.svg" width="300px" style="margin: 0px 10px 0px 0px;">
+            <img id="portmouth" src="lib/Princess-mouth01.svg" width="300px" style="position: fixed;margin-left: -310px; ">
+            <img id="porteye" src="lib/Princess-eye.svg" width="300px"
+                style="position: fixed; margin-left: -310px; filter: hue-rotate(0deg) brightness(200%) saturate(200%);">
+            <img class="porthaircolor" id="porteyebrow" src="lib/Princess-eyebrow01.svg" width="300px" style="position: fixed; margin-left: -310px; filter: hue-rotate(0deg) brightness(200%) saturate(200%);">
+            <img class="porthaircolor" id="porthair" src="lib/Princess-hair01.svg" width="300px" style="position: fixed; margin-left: -310px; filter: hue-rotate(0deg) brightness(200%) saturate(200%);">
+            <img class="porthaircolor" id="porteyerash" src="lib/Princess-eyerash01.svg" width="300px" style="position: fixed; margin-left: -310px; filter: hue-rotate(0deg) brightness(200%) saturate(200%);">
+            <img class="portrait" src="lib/goldframe.svg" width="300px" style="position: fixed; margin-left: -310px;">
+        </div>
+
+        <div class="contents" id="features">
+            <h2>Features</h2>
+            <label>이름: </label> <span id="FirstName"></span> <span id="LastName"></span><br>
+            <!--        <label>머리색: </label><span class="portcolor" id="haircolor"></span><br>
+        <label>눈 색: </label><span class="portcolor" id="eyecolor"></span><br>-->
+            <label>신분: </label> <span id="Class"></span> <span id="Job"></span><br>
+            <label>타입: </label> <span id="Type"></span><br>
+            <label>성격: </label> <span id="Nature"></span><br>
+            <label>능력치</label>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>체력</th>
+                        <td><span id="Spec_HP"></span></td>
+                    </tr>
+                    <tr>
+                        <th>마력</th>
+                        <td><span id="Spec_MP"></span></td>
+                    </tr>
+                    <th>성력</th>
+                        <td><span id="Spec_Holy"></span></td>
+                    </tr>
+                    <tr>
+                        <th>근력</th>
+                        <td><span id="Spec_str"></span></td>
+                    </tr>
+                    <tr>
+                        <th>민첩</th>
+                        <td><span id="Spec_dex"></span></td>
+                    </tr>
+                    <tr>
+                        <th>지력</th>
+                        <td><span id="Spec_int"></span></td>
+                    </tr>
+                    <tr>
+                        <th>지혜</th>
+                        <td><span id="Spec_wis"></span></td>
+                    </tr>
+                    <tr>
+                        <th>행운</th>
+                        <td><span id="Spec_luk"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <div class="contents" id="div_family" style="display: block">
+                <h2>Family</h2>
+                <label>가족관계: </label> <span id="Family"></span>
+            </div>
+            <br><br>
+            <div class="contents" id="Events">
+                <h2>Events</h2>
+                <label>남주와의 사건: </label> <span id="BoyEvent_Where"></span><span>에서</span> <span
+                    id="BoyEvent_Who"></span> <span id="BoyEvent_How"></span> <span
+                    id="BoyEvent_Result"></span><span>.</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="lib/script.js"></script>
+</body>
+
+</html>
