@@ -12,15 +12,18 @@
 </head>
 
 <body>
-    <div>
-        <img src="./lib/logo.svg" onclick="location.href='./index.html'" style="width:200px; margin: 0px 15px;">
+    <div class="header">
+        <img src="./lib/logoadam.svg" onclick="location.href='./index.html'" style="height:85px;">
+        <img src="./lib/logotext.svg" onclick="location.href='./index.html'" style="width:200px;">
+        <img src="./lib/logoadam.svg" onclick="location.href='./index.html'" style="height:85px; transform: scale(-1,1); margin-right: 15px;">
         <button class="menubutton" onclick="location.href='./rule.html'">규칙</a></button>
         <button class="menubutton" onclick="location.href='./price.html'">가격결정판</a></button>
+        <button class="menubutton" onclick="location.href='./captures.html'">게임 미리보기</a></button>
         <br>
     </div>
-    <div>
+    <div class="contents">
         <h1>가격결정판</h1>
-        <p>'한정수량 특가판매' 보드게임 진행을 위한 가격결정판입니다.<br>
+        <p>'한정수량 특가판매' 보드게임 오프라인 진행을 위한 가격결정판입니다.<br>
             'Generate' 버튼을 누르면 새로운 가격 목록이 생성됩니다.</p>
         <br>
         <h2 style="display: inline;">No. <span id="title"></span></h2> <button onclick="location.reload()"
@@ -28,7 +31,7 @@
         <table class="table table-bordered table-hover table-condensed">
             <thead>
                 <tr>
-                    <th title="Field #1">.</th>
+                    <th title="Field #1">&nbsp;</th>
                     <th title="Field #2" style="background: skyblue;">구름도매</th>
                     <th title="Field #3" style="background: pink;">박가네</th>
                     <th title="Field #4" style="background: wheat;">샵 메르디앙</th>

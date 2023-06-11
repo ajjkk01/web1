@@ -12,20 +12,24 @@
 </head>
 
 <body>
-    <div>
-        <img src="./lib/logo.svg" onclick="location.href='./index.html'" style="width:200px; margin: 0px 15px;">
+    <div class="header">
+        <img src="./lib/logoadam.svg" onclick="location.href='./index.html'" style="height:85px;">
+        <img src="./lib/logotext.svg" onclick="location.href='./index.html'" style="width:200px;">
+        <img src="./lib/logoadam.svg" onclick="location.href='./index.html'" style="height:85px; transform: scale(-1,1); margin-right: 15px;">
         <button class="menubutton" onclick="location.href='./rule.html'">규칙</a></button>
         <button class="menubutton" onclick="location.href='./price.html'">가격결정판</a></button>
+        <button class="menubutton" onclick="location.href='./captures.html'">게임 미리보기</a></button>
         <br>
     </div>
-    <div class="grid">
+    <div class="contents">
         <h1>규칙</h1>
         <p>최소 비용 최대 효용의 인터넷 쇼핑을 합니다!<br>정해진 물품을 쇼핑해서 가장 싸게 산 사람이 이깁니다.</p>
-        <p>구성: 쇼핑 목록 판 x 1장, 쇼핑 목록 카드 x 8장, 가격 결정 판 x 12장 (또는 '가격결정판' 웹페이지), 상품 카드 x 40장, 쿠폰 카드 x 10장, 코인 x 24개</p>
+        <p>구성: 쇼핑 목록 판 x 1장, 쇼핑 목록 카드 x 10장, 상품 카드 x 50장, 쿠폰 카드 x 8장, 
+            코인 x 20개</p>
         <br>
     </div>
-    <div class="grid">
-        <h2><span style="color: orange">▶</span>게임 세팅</h2>
+    <div>
+        <h2><span style="color: #C2B59B">▶</span>게임 세팅</h2>
         <ol>
             <li>공통 "쇼핑 목록" 결정하기</li>
             <ul>
@@ -34,37 +38,40 @@
             </ul>
             <li>상품의 "구매 가격" 결정하기</li>
             <ul>
-                <li>가격 결정 판을 섞고 (또는 '가격결정판' 웹페이지의 'Generate' 버튼을 누르고) 한 장을 뽑아 배송비 및 상품 가격을 결정합니다.</li>
+                <li>
+                (온라인) '게임 시작' 버튼을 눌러 배송비 및 상품 가격을 결정합니다. 테이블탑 시뮬레이터 좌측 하단의 채팅창에서 전체 가격 목록을 볼 수 있습니다.</li>
+                <li>(오프라인) 가격 결정 판을 섞고 한 장을 뽑아 (또는 '가격결정판' 웹페이지의 'Generate' 버튼을 누르고) 배송비 및 상품 가격을 결정합니다.</li>
             </ul>
             <li>개인별 "필수구매상품" 결정하기</li>
             <ul>
                 <li>공통 쇼핑 목록에서 '필수구매상품' 을 결정합니다. 사면체 주사위를 굴리고, 쇼핑 목록 판 상단의 눈을 참고해 당신의 '필수구매상품' 을 확인하세요.</li>
                 <li>육면체 주사위를 굴려서 '필수구매상품' 의 구매 쇼핑몰을 결정합니다. 각 쇼핑 목록 하단을 참고하세요. </li>
-                <li>메모지에 당신의 '필수구매상품' 과 '쇼핑몰' 을 적습니다. 게임이 끝나기 전까지 해당 쇼핑몰의 해당 상품을 꼭 사야 합니다.</li>
+                <li>당신의 '필수구매상품' 과 '쇼핑몰' 을 모두가 볼 수 있게 적습니다. 게임이 끝나기 전까지 해당 쇼핑몰의 해당 상품을 꼭 사야 합니다.</li>
             </ul>
             <li>카드 세팅하기</li>
             <ul>
-                <li>쿠폰 카드를 잘 섞고 한 장씩 받습니다. 쿠폰 카드는 모두가 볼 수 있도록 바닥에 내려놓으세요.</li>
+                <li>쿠폰 카드를 잘 섞고 한 장씩 장바구니 (손패)에 받습니다. 쿠폰 카드는 기본적으로 자신만 볼 수 있지만, 효과를 사용하기 위해서 카드 내용을 모두에게 공표할 수 있습니다.</li>
                 <li>상품 카드를 잘 섞고 4장씩 받습니다.</li>
                 <li>남은 상품 카드를 가운데에 둡니다.</li>
             </ul>
         </ol>
         <br>
     </div>
-    <div class="grid">
-        <h2><span style="color: orange">▶</span>게임 진행</h2>
+    <div>
+        <h2><span style="color: #C2B59B">▶</span>게임 진행</h2>
         <ol>
             <li>장바구니 채우기</li>
             <ul>
-                <li>매 턴, 각자 카드를 덱에서 한 장씩 가져옵니다.</li>
+                <li>매 턴 시작 시, 각자 카드를 덱에서 한 장씩 가져옵니다. 덱에 남은 카드가 부족하다면, 원하는 사람만 가져옵니다.</li>
                 <li>각자 판매할 카드를 내려놓고 흥정을 해 카드를 얻거나 넘기세요. 판매 금액은 자유입니다. 코인이 될 수도, 어쩌면 다른 카드가 될 수도 있지요. 시장 논리에 따라 결정하세요.
                 </li>
                 <li>카드 교환이 끝나면 각자 필요하지 않은 카드를 버립니다. 단, 한 턴에 한 장만 버릴 수 있습니다.</li>
             </ul>
             <li>장바구니 관리하기</li>
             <ul>
-                <li>같은 상품을 중복으로 구매하는 것은 비효율적이기 때문에, 중복 상품 카드는 버리는 것이 좋습니다. 배송비와 판매 금액을 고려하세요.</li>
+                <li>같은 상품을 중복으로 구매하는 것은 비효율적이니 중복 상품 카드는 버리는 것이 좋습니다. 배송비와 판매 금액을 고려하세요.</li>
                 <li>가격이 '품절' 인 물품은 구매할 수 없습니다. 게임이 끝나기 전까지 해당 카드를 버리지 않으면 페널티 카드를 받습니다.</li>
+                <li>방해 카드는 사용하지 않거나 버리지 않아도 페널티는 없지만, 장바구니의 완성을 위해서라면 사용하는 것이 좋습니다.</li>
             </ul>
             <li>점수 계산하기</li>
             <ul>

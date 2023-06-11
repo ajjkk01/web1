@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(245, 247, 242);
-    padding: 15px 30px;
+    background-color: #F5F3EF;
+    padding: 30px 50px 80px 50px;
     font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -8,7 +8,7 @@ body {
 button {
   background-color: white;
   font-weight: bold;
-  border: solid 2px orange;
+  border: solid 2px #C2B59B;
   border-radius: 100px;
   padding: 4px 10px;
   cursor: pointer;
@@ -17,14 +17,15 @@ button {
 .menubutton {
     font-size: 1.3rem;
     font-weight: 600;
-    box-shadow: 0px 3px 0px #D7DF23;
+    box-shadow: 0px 3px 0px #3399ff;
     padding:5px 15px;
     margin: 0px 5px;
     bottom: 40px; position: relative;
 }
 
-.grid {
-    border-bottom: 1px solid #ccd4c4;
+p {
+  margin-block-start: 2em;
+  margin-block-end: 0.5em;
 }
 
 table {
